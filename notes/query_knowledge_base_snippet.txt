@@ -1,0 +1,17 @@
+def query_knowledge_base(query, kb_id):
+    try:
+        response = bedrock_kb.retrieve(
+            knowledgeBaseId=kb_id,
+            retrievalQuery={
+                'text': query
+            },
+            retrievalConfiguration={
+                'vectorSearchConfiguration': {
+                    'numberOfResults': 3
+                }
+            }
+        )
+        return response['retrievalResults']
+    except ClientError as e:
+        print(f"Error querying Knowledge Base: {e}")
+        return []

@@ -1,0 +1,27 @@
+# Ignorer les environnements virtuels Python
+venv/
+__pycache__/
+
+# Ignorer les fichiers d'état et de configuration de Terraform
+*.tfstate
+*.tfstate.*
+.terraform/
+.terraform.lock.hcl
+
+# Ignorer les fichiers système macOS
+.DS_Store
+
+# Ignorer les fichiers de dépendances et de build locaux
+/node_modules
+/dist
+/build
+
+# Fichiers de secrets (convention)
+.env
+*.env
+secrets.json
+credentials.json
+
+# Fichiers zip et de soumission
+*.zip
+CHALFOUH_Moslem_ProjectSubmission/

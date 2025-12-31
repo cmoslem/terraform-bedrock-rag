@@ -1,0 +1,16 @@
+1. For Facts: Reducing Temperature and Top-P (Example: Model Y Range)
+
+When I asked about the range of the Model Y, I needed a quick and exact answer. 
+That’s why I lowered the temperature (bringing it closer to 0). 
+This reduction makes the response more deterministic and concise by forcing the model to focus on the most probable words. 
+I also reduced Top-P. Contrary to what I initially thought, Top-P doesn't directly reduce the word count, but rather the range of possible choices the model can make.
+ By setting it low, I ensure the AI only picks from the very top of the most relevant words.
+
+
+
+2. For Creativity: Setting Temperature and Top-P to 1 (Example: Vexin Biodiversity)
+
+Conversely, when I asked it to discuss biodiversity in the Vexin, I wanted a rich and varied response. 
+
+I left the temperature at 1 because this increases randomness in word selection, making the answer more creative and fluid. 
+Similarly, setting Top-P to 1 gives the model maximum freedom. It can thus consider all possible words in its selection, resulting in a diverse vocabulary.
